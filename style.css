@@ -172,7 +172,7 @@ body {
     display: flex;
     align-items: center;
     margin: 0 auto;
-     margin-top: 40px;
+    margin-top: 40px;
     gap: 20px;
     background-color: #1f5130;
     width: 70%;
@@ -231,11 +231,11 @@ body {
 
 
 .third__title {
-  margin-left: 130px;
-  margin-top: 20px;
-    
+    margin-left: 130px;
+    margin-top: 20px;
+
 }
-  
+
 .third__img {
     display: flex;
     justify-content: center;
@@ -332,28 +332,30 @@ body {
 }
 
 .place {
-    margin: 40px
+    margin: 20px;
+
 }
 
-.place__title {
-    margin-top: 70px;
-    margin-left: 150px;
+.place__title{
+    text-align: center;
+    margin-top: 30px;
 }
 
 
 .place__container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 12px;
     cursor: pointer;
+    flex-basis: 30%;
+   
 }
 
 .place__container img {
-    width: 275px;
-    height: 245px;
+    height: 70%;
+    width: 100%;
     border-radius: 10px;
-    margin-top: 20px;
+    margin: 10px;
 }
 
 .place__container img:hover {
@@ -363,11 +365,8 @@ body {
     border: solid black 3px;
 }
 
-@media screen and (max-width:600px){
-    .spot__list{
-    
-    }
-    
+@media screen and (max-width:600px) {
+    .place {}
 }
 
 .Advertisement1 {
@@ -376,6 +375,7 @@ body {
     text-align: center;
     gap: 40px;
     margin: 0 auto;
+    margin-top: 80px;
     background-color: #1f5130;
     color: white;
     width: 76%;
@@ -398,13 +398,11 @@ body {
     transform: rotate(-150deg);
 }
 
-.Advertisement1__title h2 {
+.Advertisement1__title {
     padding: 20px;
+    margin: 10px;
 }
 
-.Advertisement1__title p {
-    padding: 10px;
-}
 
 .Advertisement1__title button {
     background-color: white;
@@ -412,7 +410,6 @@ body {
     border-radius: 30px;
     border: none;
     padding: 20px;
-    margin-bottom: 15px;
     flex-wrap: wrap;
     cursor: pointer;
 }
@@ -424,29 +421,42 @@ body {
     border: solid black 2px;
 }
 
+@media screen and (max-width:600px) {
+    .Advertisement1 img {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .Advertisement1 img {
+        width: 100%;
+    }
+
+}
+
+
 .place1 {
     margin: 40px;
-     margin-top: 80px;
+    margin-top: 80px;
 }
 
-.place1__title {
-    margin-left: 150px;
+.place1__title{
+    text-align: center;
 }
-
 
 .place1__container {
     display: flex;
-    flex-wrap: wrap;
+    flex-basis: 30%;
     justify-content: center;
     gap: 12px;
     cursor: pointer;
 }
 
 .place1__container img {
-    width: 275px;
-    height: 245px;
+    width: 100%;
+    height: 60%;
     border-radius: 10px;
-    margin-top: 20px;
+    margin: 20px;
 
 }
 
@@ -457,20 +467,20 @@ body {
     border: solid black 3px;
 }
 
-.suggestion{
-    margin-top: 50px;
+.suggestion {
+    margin-top: 70px;
+
 }
 
 .suggestion__title {
-    margin-left: 190px;
+   text-align: center;
 }
-
 
 .suggestion__container {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    gap: 10px;
+    gap: 15px;
     cursor: pointer;
 
 }
@@ -489,12 +499,14 @@ body {
     border-radius: 5px;
     overflow: hidden;
     left: 10px;
+    flex-basis: 20%;
 }
 
 .fam-spots img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: solid blanchedalmond 2px;
 }
 
 .tag {
@@ -518,14 +530,14 @@ body {
     background-color: #1f5130;
     color: white;
     align-items: center;
-     text-align: center;
+    text-align: center;
     cursor: pointer;
 }
 
 .winner__s1 {
     font-size: 20px;
     padding: 10px;
-   
+
 }
 
 .winner__s1 button {
@@ -564,16 +576,16 @@ body {
 }
 
 @media screen and (max-width:600px) {
-   .winner__s2{
-    width: 210px;
-   }
+    .winner__s2 {
+        width: 210px;
+    }
 }
 
-@media screen and (max-width:400px){
-    winner__s2{
+@media screen and (max-width:400px) {
+    winner__s2 {
         width: 100%;
     }
-    
+
 }
 
 
@@ -596,14 +608,15 @@ body {
 .footer2 {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .footer2__s1 {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     align-items: center;
 }
 
@@ -637,9 +650,9 @@ body {
     margin-left: 75px;
 }
 
-@media screen and (max-width:600px){
-    .footer4{
+@media screen and (max-width:600px) {
+    .footer4 {
         display: none;
     }
-    
+
 }
