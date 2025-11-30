@@ -11,7 +11,7 @@ body {
 
 @media screen and (max-width: 800px) {
     body {
-        font-size: 10px;
+        font-size: 12px;
         margin: 10px;
     }
 }
@@ -44,9 +44,9 @@ body {
 
 .navbar__s2 p:hover {
     transition: 1s;
-    background-color: #1f5130;
-    color: white;
-    border: #1f5130 solid 2px;
+    background-color: #34E0A1;
+    color: #000000;
+    border: white solid 2px;
     padding: 5px;
     border-radius: 2px;
 }
@@ -65,6 +65,7 @@ body {
     font-weight: 200;
     border-radius: 20px;
     padding: 8px;
+    cursor: pointer;
 
 }
 
@@ -153,8 +154,8 @@ body {
 }
 
 .whereto__s2 button {
-    background-color: #1f5130;
-    color: white;
+    background-color: #34E0A1;
+    color: #000000;
     border: none;
     border-radius: 8px;
     padding: 12px;
@@ -163,9 +164,9 @@ body {
 
 .whereto__s2 button:hover {
     transition: 1s;
-    background-color: transparent;
-    color: black;
-    border: solid black 2px;
+    background-color: white;
+    color: #34E0A1;
+    border: solid #1f5130 2px;
 }
 
 .add {
@@ -174,7 +175,8 @@ body {
     margin: 0 auto;
     margin-top: 40px;
     gap: 20px;
-    background-color: #1f5130;
+    background-color: #34E0A1;
+    color: #1f2d1f;
     width: 70%;
     height: 70%;
     padding: 40px;
@@ -216,8 +218,8 @@ body {
 .add__title button {
     padding: 20px;
     border-radius: 10px;
-    color: white;
-    background-color: greenyellow;
+    color: black;
+    background-color: white;
     cursor: pointer;
     margin-top: 20px;
 }
@@ -231,9 +233,9 @@ body {
 
 
 .third__title {
-    margin-left: 130px;
     margin-top: 20px;
-
+    text-align-last: center;
+    color: #1c1c1c;
 }
 
 .third__img {
@@ -290,8 +292,8 @@ body {
     gap: 40px;
     margin: 0 auto;
     margin-top: 60px;
-    background-color: #1f5130;
-    color: white;
+    background-color: #34E0A1;
+    color: #1f2d1f;
     width: 76%;
     height: 20%;
     cursor: pointer;
@@ -326,9 +328,9 @@ body {
 
 .Advertisement__title button:hover {
     transition: 1s;
-    background-color: transparent;
-    color: black;
-    border: solid black 2px;
+    background-color: white;
+    color: #1f5130;
+    border: solid #1f5130 2px;
 }
 
 .place {
@@ -336,33 +338,45 @@ body {
 
 }
 
-.place__title{
-    text-align: center;
+.place__title {
     margin-top: 30px;
+    text-align-last: center;
+    padding: 20px;
+    color: #1c1c1c;
+
 }
 
 
 .place__container {
     display: flex;
     justify-content: center;
-    gap: 12px;
+    flex-wrap: wrap;
+    gap: 20px;
     cursor: pointer;
-    flex-basis: 30%;
-   
+    flex-basis: 40%;
+
 }
 
 .place__container img {
-    height: 70%;
+    height: 80%;
     width: 100%;
     border-radius: 10px;
-    margin: 10px;
+    margin: 0px;
+}
+
+.place__container h3 {
+    color: #1c1c1c;
+}
+
+.place__container p {
+    color: #4a4a4a;
 }
 
 .place__container img:hover {
     transition: 1s;
     background-color: transparent;
     color: black;
-    border: solid black 3px;
+    border: solid #1f5130 3px;
 }
 
 @media screen and (max-width:600px) {
@@ -376,8 +390,8 @@ body {
     gap: 40px;
     margin: 0 auto;
     margin-top: 80px;
-    background-color: #1f5130;
-    color: white;
+    background-color: #34E0A1;
+    color: #1f2d1f;
     width: 76%;
     height: 20%;
     cursor: pointer;
@@ -416,14 +430,14 @@ body {
 
 .Advertisement1__title button:hover {
     transition: 1s;
-    background-color: transparent;
-    color: black;
-    border: solid black 2px;
+    background-color: white;
+    color: #1f5130;
+    border: solid #1f5130 2px;
 }
 
 @media screen and (max-width:600px) {
     .Advertisement1 img {
-        width: 210px;
+        width: 190px;
     }
 }
 
@@ -440,23 +454,33 @@ body {
     margin-top: 80px;
 }
 
-.place1__title{
-    text-align: center;
+.place1__title {
+    text-align-last: center;
+    padding: 20px;
+    color: #1c1c1c;
+
 }
 
 .place1__container {
     display: flex;
     flex-basis: 30%;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 12px;
+    gap: 20px;
     cursor: pointer;
 }
 
 .place1__container img {
     width: 100%;
-    height: 60%;
+    height: 80%;
     border-radius: 10px;
-    margin: 20px;
+    margin: 0px;
+
+}
+
+.place__container h3,
+.place__container p {
+    color: #1c1c1c;
 
 }
 
@@ -464,7 +488,7 @@ body {
     transition: 1s;
     background-color: black;
     color: white;
-    border: solid black 3px;
+    border: solid #1f5130 3px;
 }
 
 .suggestion {
@@ -473,7 +497,9 @@ body {
 }
 
 .suggestion__title {
-   text-align: center;
+    text-align-last: center;
+    color: #1c1c1c;
+
 }
 
 .suggestion__container {
@@ -506,7 +532,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: solid blanchedalmond 2px;
+    border: solid #1f5130 3px;
 }
 
 .tag {
@@ -527,8 +553,8 @@ body {
     gap: 40px;
     margin: 10px;
     margin-top: 60px;
-    background-color: #1f5130;
-    color: white;
+    background-color: #34E0A1;
+    color: #1f2d1f;
     align-items: center;
     text-align: center;
     cursor: pointer;
@@ -542,7 +568,7 @@ body {
 
 .winner__s1 button {
     cursor: pointer;
-    border: solid black 2px;
+    border: solid #e0e0e0 2px;
 }
 
 .winner__s1 button:hover {
@@ -554,7 +580,7 @@ body {
 
 .winner__s1 button {
     background-color: white;
-    color: black;
+    color: #1f5130;
     padding: 15px;
     margin-top: 30px;
     border: none;
@@ -599,8 +625,8 @@ body {
 }
 
 .footer {
-    background-color: #1f5130;
-    color: white;
+    background-color: #34E0A1;
+    color: #1f2d1f;
     margin-top: 50px;
 
 }
